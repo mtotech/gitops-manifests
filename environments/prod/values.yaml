@@ -1,1 +1,23 @@
-# Reserved for future environment overrides
+replicaCount: 3
+
+image:
+  repository: chauhanneru877/gitops-platform
+  tag: "v1.0.1"
+
+service:
+  type: ClusterIP
+
+resources:
+  requests:
+    cpu: 500m
+    memory: 512Mi
+
+  limits:
+    cpu: "1"
+    memory: 1Gi
+
+ingress:
+  enabled: true
+
+app:
+  environment: prod
