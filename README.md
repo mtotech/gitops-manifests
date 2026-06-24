@@ -223,16 +223,12 @@ Git Commit
     │
      ▼
     Git Push
-
     │
      ▼
     ArgoCD Detects Change
-
     │
-    
     ▼
     Sync
-
     │
     ▼
     Amazon EKS Updated
