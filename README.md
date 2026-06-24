@@ -1,27 +1,29 @@
-# Production Grade GitOps Manifests Repository
-### ArgoCD Kubernetes Helm Prometheus GitOps
+## Production Grade GitOps Manifests Repository
+#### ArgoCD Kubernetes Helm Prometheus GitOps
 ________________________________________
-## Overview
-### This repository serves as the GitOps source of truth for a Production Grade Kubernetes Platform running on Amazon EKS.
-### All Kubernetes deployments, environment configurations, monitoring configurations, and platform resources are managed declaratively through Git and synchronized automatically using ArgoCD.
+### Overview
+#### This repository serves as the GitOps source of truth for a Production Grade Kubernetes Platform running on Amazon EKS.
+#### All Kubernetes deployments, environment configurations, monitoring configurations, and platform resources are managed declaratively through Git and synchronized automatically using ArgoCD.
 ________________________________________
 ## GitOps Architecture
 Developer
 
     │
     
-    ▼
+    
     
 GitHub (gitops-manifests)
     │
     ▼
 ArgoCD
+
     │
-    ▼
+    
 Amazon EKS
+
     │
  ┌──┼───────────────┐
- ▼  ▼               ▼
+                  
 
 Dev  Staging      Prod
 
