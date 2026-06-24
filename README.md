@@ -222,26 +222,20 @@ Git Commit
 
     │
      ▼
-    
-Git Push
+    Git Push
+
+    │
+     ▼
+    ArgoCD Detects Change
 
     │
     
     ▼
-    
-ArgoCD Detects Change
+    Sync
 
     │
-    
     ▼
-    
-Sync
-
-    │
-    
-    ▼
-    
-Amazon EKS Updated
+    Amazon EKS Updated
 ________________________________________
 #### Resume Highlights
 •	Implemented GitOps deployment strategy using ArgoCD.
