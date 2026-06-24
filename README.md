@@ -8,7 +8,8 @@ ________________________________________
 ## GitOps Architecture
 Developer
 
-    │
+    
+    ▼
     
     
     
