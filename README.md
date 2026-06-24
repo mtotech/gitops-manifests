@@ -249,7 +249,7 @@ screenshots/phase7-argocd.png
 
 Namespaces
 
-screenshots/phase8-namespaces.png
+![](screenshots/phase8-namespaces.png)
 
 Multi Environment Pods
 
