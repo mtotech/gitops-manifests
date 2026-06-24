@@ -245,7 +245,7 @@ ________________________________________
 #### Screenshots
 ArgoCD Applications
 
-screenshots/phase7-argocd.png
+![](screenshots/argocd.png.png)
 
 Namespaces
 
@@ -253,15 +253,15 @@ Namespaces
 
 Multi Environment Pods
 
-screenshots/phase8-pods.png
+![](screenshots/phase8-namespaces.png)
 
-Resource Quotas
+Git Hub Action
 
-screenshots/resource-quotas.png
+![](screenshots/github_pipeline.png)
 
 Monitoring Stack
 
-screenshots/phase9-monitoring.png
+![](screenshots/phase9-monitoring.png)
 ________________________________________
 #### GitOps Workflow
 Git Commit
