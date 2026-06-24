@@ -62,11 +62,11 @@ gitops-manifests/
 
 ├── monitoring/
 
-   ├──  monitoring-app.yaml
+    ├──  monitoring-app.yaml
    
-   ├──  prometheus-values.yaml
+    ├──  prometheus-values.yaml
    
-   └──  grafana-values.yaml
+    └──  grafana-values.yaml
 
 
 
