@@ -6,32 +6,22 @@ ________________________________________
 #### All Kubernetes deployments, environment configurations, monitoring configurations, and platform resources are managed declaratively through Git and synchronized automatically using ArgoCD.
 ________________________________________
 ## GitOps Architecture
-Developer
-
-    
-    ▼
-    
-    
-    
-GitHub (gitops-manifests)
-    │
-    ▼
-ArgoCD
-
-    │
-    
-Amazon EKS
-
-    │
- ┌──┼───────────────┐
-                  
-
-Dev  Staging      Prod
-
-    │
-    ▼
-
-Monitoring Stack
+                 Developer
+                     |
+                     v
+        GitHub (gitops-manifests)
+                     |
+                     v
+                  ArgoCD
+                     |
+                     v
+                Amazon EKS
+                     |
+        +------------+------------+
+        |            |            |
+        v            v            v
+       Dev        Staging       Prod
+            Monitoring Stack
 
 (Prometheus + Node Exporter + kube-state-metrics)
 ________________________________________
