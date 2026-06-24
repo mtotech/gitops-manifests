@@ -58,8 +58,7 @@ staging.yaml
 
 
 ________________________________________
-Implemented Phases
-
+### Implemented Phases
 Phase	Description	Status
 
 Phase 07	ArgoCD GitOps	✅
@@ -72,8 +71,7 @@ Phase 11	AWS Load Balancer Controller	🚧 Planned
 
 Phase 12	Alerting & Notifications	🚧 Planned
 ________________________________________
-ArgoCD App of Apps Pattern
-
+### ArgoCD App of Apps Pattern
 The platform uses the App of Apps pattern for centralized management.
 
 root-app
@@ -86,7 +84,7 @@ root-app
 
 └── gitops-prod
 
-Benefits:
+### Benefits:
 
 •	Centralized Control
 
@@ -96,49 +94,63 @@ Benefits:
 
 •	GitOps Best Practices
 ________________________________________
-Multi Environment Strategy
+### Multi Environment Strategy
 Namespaces:
 dev
 staging
 prod
-Each environment has:
+### Each environment has:
 •	Independent Deployment
 •	Independent Configuration
 •	Independent Resource Limits
 •	Environment-Specific Values
 ________________________________________
-Resource Governance
+### Resource Governance
 Implemented:
+
 dev-quota
+
 staging-quota
+
 prod-quota
-Controls:
+### Controls:
 •	CPU Requests
+
 •	CPU Limits
+
 •	Memory Requests
+
 •	Memory Limits
 ________________________________________
-Monitoring Foundation
+### Monitoring Foundation
 Monitoring components deployed using GitOps:
-Prometheus Operator
+#### Prometheus Operator
 Provides:
 •	Metrics Collection
 •	Service Discovery
 •	Kubernetes Monitoring
-Node Exporter
+#### Node Exporter
 Provides:
+
 •	CPU Metrics
+
 •	Memory Metrics
+
 •	Filesystem Metrics
+
 •	Network Metrics
-kube-state-metrics
+#### kube-state-metrics
 Provides:
+
 •	Deployment Metrics
+
 •	Pod Metrics
+
 •	ReplicaSet Metrics
+
 •	Namespace Metrics
 ________________________________________
-Validation Commands
+#### Validation Commands
 ArgoCD Applications
 kubectl get applications -n argocd
 Namespaces
@@ -150,7 +162,7 @@ kubectl get resourcequota -A
 Monitoring Stack
 kubectl get pods -n monitoring
 ________________________________________
-Screenshots
+#### Screenshots
 ArgoCD Applications
 screenshots/phase7-argocd.png
 Namespaces
@@ -162,37 +174,54 @@ screenshots/resource-quotas.png
 Monitoring Stack
 screenshots/phase9-monitoring.png
 ________________________________________
-GitOps Workflow
+#### GitOps Workflow
 Git Commit
+
     │
+    
     ▼
+    
 Git Push
+
     │
+    
     ▼
+    
 ArgoCD Detects Change
+
     │
+    
     ▼
+    
 Sync
+
     │
+    
     ▼
+    
 Amazon EKS Updated
 ________________________________________
-Resume Highlights
+#### Resume Highlights
 •	Implemented GitOps deployment strategy using ArgoCD.
+
 •	Designed App of Apps architecture for Kubernetes platform management.
+
 •	Built multi-environment deployment model using Dev, Staging and Production namespaces.
+
 •	Implemented namespace resource governance using ResourceQuotas.
+
 •	Deployed Prometheus-based Kubernetes monitoring through GitOps workflows.
+
 •	Managed Kubernetes platform operations using declarative manifests.
 ________________________________________
-Planned Enhancements
+#### Planned Enhancements
 Phase 11
 AWS Load Balancer Controller
 •	IRSA
 •	OIDC Integration
 •	ALB Ingress
 •	External Access
-Phase 12
+#### Phase 12
 Alerting & Notifications
 •	AlertManager
 •	Grafana Alerts
@@ -206,15 +235,10 @@ Centralized Logging
 •	LogQL
 •	Grafana Log Dashboards
 ________________________________________
-Author
+### Author
 Neeraj Kumar
 AWS Certified Solutions Architect – Associate
 HashiCorp Certified Terraform Associate
 Cloud & DevOps Engineer
 ________________________________________
-Project Status
-GitOps Platform Status: Production Ready
-Current Completion: ~90%
-GitHub Portfolio Ready: ✅
-Resume Ready: ✅
-Interview Ready: ✅
+
