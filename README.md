@@ -25,39 +25,12 @@ ________________________________________
 
 (Prometheus + Node Exporter + kube-state-metrics)
 ________________________________________
-Repository Structure
-gitops-manifests/
-
-├── applications/
-│   ├── root-app.yaml
-│   ├── dev.yaml
-│   ├── staging.yaml
-│   └── prod.yaml
-│
-├── environments/
-│   ├── dev/
-│   ├── staging/
-│   └── prod/
-│
-├── quotas/
-│   ├── dev-quota.yaml
-│   ├── staging-quota.yaml
-│   └── prod-quota.yaml
-│
-├── monitoring/
-│   ├── monitoring-app.yaml
-│   ├── prometheus-values.yaml
-│   └── grafana-values.yaml
-│
-└── docs/
-
-
-
 ## Repository Structure
 
 gitops-manifests/
 
-├── applications/
+├──
+applications/
 │   ├── root-app.yaml
 │   ├── dev.yaml
 │   ├── staging.yaml
@@ -87,11 +60,17 @@ gitops-manifests/
 
 ________________________________________
 Implemented Phases
+
 Phase	Description	Status
+
 Phase 07	ArgoCD GitOps	✅
+
 Phase 08	Multi Environment Strategy	✅
+
 Phase 09	Monitoring Foundation	✅
+
 Phase 11	AWS Load Balancer Controller	🚧 Planned
+
 Phase 12	Alerting & Notifications	🚧 Planned
 ________________________________________
 ArgoCD App of Apps Pattern
