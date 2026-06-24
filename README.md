@@ -283,7 +283,6 @@ Centralized Logging
 ________________________________________
 ### Author
 Neeraj Kumar
-
 AWS Certified Solutions Architect – Associate
 
 HashiCorp Certified Terraform Associate
