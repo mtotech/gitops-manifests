@@ -31,10 +31,12 @@ gitops-manifests/
 
 ├──
 applications/
-│   ├── root-app.yaml
-│   ├── dev.yaml
-│   ├── staging.yaml
-│   └── prod.yaml
+
+│   ├──   root-app.yaml
+│   ├──   dev.yaml
+│   ├── 
+staging.yaml
+│   └──   prod.yaml
 │
 ├── environments/
 │   ├── dev/
@@ -47,16 +49,13 @@ applications/
 │   └── prod-quota.yaml
 │
 ├── monitoring/
-│   ├── monitoring-app.yaml
-│   ├── prometheus-values.yaml
-│   └── grafana-values.yaml
-│
-└── docs/
-├── PHASE-07-ARGOCD-GITOPS.md
-├── PHASE-08-MULTI-ENVIRONMENT.md
-├── PHASE-09-MONITORING.md
-├── PHASE-11-ALB-CONTROLLER.md
-└── PHASE-12-ALERTING.md
+
+   ├── monitoring-app.yaml
+   ├── prometheus-values.yaml
+   └── grafana-values.yaml
+
+
+
 
 ________________________________________
 Implemented Phases
