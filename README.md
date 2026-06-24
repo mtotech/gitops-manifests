@@ -96,13 +96,20 @@ root-app
 ________________________________________
 ### Multi Environment Strategy
 Namespaces:
+
 dev
+
 staging
+
 prod
+
 ### Each environment has:
 •	Independent Deployment
+
 •	Independent Configuration
+
 •	Independent Resource Limits
+
 •	Environment-Specific Values
 ________________________________________
 ### Resource Governance
@@ -126,9 +133,13 @@ ________________________________________
 Monitoring components deployed using GitOps:
 #### Prometheus Operator
 Provides:
+
 •	Metrics Collection
+
 •	Service Discovery
+
 •	Kubernetes Monitoring
+
 #### Node Exporter
 Provides:
 
@@ -152,26 +163,44 @@ Provides:
 ________________________________________
 #### Validation Commands
 ArgoCD Applications
+
 kubectl get applications -n argocd
+
 Namespaces
+
 kubectl get ns
+
 Pods
+
 kubectl get pods -A
+
 Resource Quotas
+
 kubectl get resourcequota -A
+
 Monitoring Stack
+
 kubectl get pods -n monitoring
 ________________________________________
 #### Screenshots
 ArgoCD Applications
+
 screenshots/phase7-argocd.png
+
 Namespaces
+
 screenshots/phase8-namespaces.png
+
 Multi Environment Pods
+
 screenshots/phase8-pods.png
+
 Resource Quotas
+
 screenshots/resource-quotas.png
+
 Monitoring Stack
+
 screenshots/phase9-monitoring.png
 ________________________________________
 #### GitOps Workflow
@@ -216,29 +245,49 @@ ________________________________________
 ________________________________________
 #### Planned Enhancements
 Phase 11
+
 AWS Load Balancer Controller
+
 •	IRSA
+
 •	OIDC Integration
+
 •	ALB Ingress
+
 •	External Access
+
 #### Phase 12
 Alerting & Notifications
+
 •	AlertManager
+
 •	Grafana Alerts
+
 •	Slack Integration
+
 •	Deployment Alerts
+
 •	Infrastructure Alerts
+
 Future
+
 Centralized Logging
+
 •	Loki
+
 •	Promtail
+
 •	LogQL
+
 •	Grafana Log Dashboards
 ________________________________________
 ### Author
 Neeraj Kumar
+
 AWS Certified Solutions Architect – Associate
+
 HashiCorp Certified Terraform Associate
+
 Cloud & DevOps Engineer
 ________________________________________
 
