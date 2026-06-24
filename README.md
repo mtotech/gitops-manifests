@@ -1,11 +1,11 @@
 ## Production Grade GitOps Manifests Repository
-#### ArgoCD Kubernetes Helm Prometheus GitOps
+### ArgoCD Kubernetes Helm Prometheus GitOps
 ________________________________________
-### Overview
-#### This repository serves as the GitOps source of truth for a Production Grade Kubernetes Platform running on Amazon EKS.
-#### All Kubernetes deployments, environment configurations, monitoring configurations, and platform resources are managed declaratively through Git and synchronized automatically using ArgoCD.
+## Overview
+### This repository serves as the GitOps source of truth for a Production Grade Kubernetes Platform running on Amazon EKS.
+### All Kubernetes deployments, environment configurations, monitoring configurations, and platform resources are managed declaratively through Git and synchronized automatically using ArgoCD.
 ________________________________________
-## GitOps Architecture
+### GitOps Architecture
                  Developer
                      |
                      v
@@ -29,29 +29,45 @@ ________________________________________
 
 gitops-manifests/
 
-├──
-applications/
+├──  applications/
 
-│   ├──   root-app.yaml
-│   ├──   dev.yaml
-│   ├── 
+│    ├──   root-app.yaml
+
+│    ├──   dev.yaml
+
+│    ├──  
+
 staging.yaml
-│   └──   prod.yaml
+
+│    └──   prod.yaml
 │
-├── environments/
-│   ├── dev/
-│   ├── staging/
-│   └── prod/
+
+├──  environments/
+
+│    ├──  dev/
+
+│    ├──  staging/
+
+│    └──  prod/
+
 │
+
 ├── quotas/
-│   ├── dev-quota.yaml
-│   ├── staging-quota.yaml
-│   └── prod-quota.yaml
+
+│    ├──  dev-quota.yaml
+
+│    ├──  staging-quota.yaml
+
+│    └──  prod-quota.yaml
+
 │
+
 ├── monitoring/
 
    ├── monitoring-app.yaml
+   
    ├── prometheus-values.yaml
+   
    └── grafana-values.yaml
 
 
