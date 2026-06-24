@@ -73,16 +73,27 @@ Phase 11	AWS Load Balancer Controller	🚧 Planned
 Phase 12	Alerting & Notifications	🚧 Planned
 ________________________________________
 ArgoCD App of Apps Pattern
+
 The platform uses the App of Apps pattern for centralized management.
+
 root-app
+
 │
+
 ├── gitops-dev
+
 ├── gitops-staging
+
 └── gitops-prod
+
 Benefits:
+
 •	Centralized Control
+
 •	Environment Isolation
+
 •	Easier Scaling
+
 •	GitOps Best Practices
 ________________________________________
 Multi Environment Strategy
